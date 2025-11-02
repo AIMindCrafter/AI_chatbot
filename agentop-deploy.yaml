@@ -1,0 +1,19 @@
+# AgentOp deployment template
+# Fill in the image, env vars and resource limits according to your AgentOp setup.
+
+apiVersion: agentop/v1
+kind: Service
+metadata:
+  name: langgraph-chatbot
+spec:
+  image: ghcr.io/<OWNER>/langgraph-chatbot:latest  # replace with your image
+  ports:
+    - containerPort: 8501
+  env:
+    - name: OPENAI_API_KEY
+      value: "${OPENAI_API_KEY}"
+  resources:
+    limits:
+      cpu: "500m"
+      memory: "512Mi"
+  command: ["streamlit", "run", "streamlit_frontend.py", "--server.port=8501", "--server.address=0.0.0.0"]

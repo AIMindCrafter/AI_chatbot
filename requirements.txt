@@ -1,0 +1,11 @@
+streamlit
+python-dotenv
+langchain
+openai
+requests
+langgraph
+
+
+# If you use a local `langgraph` package, either install it separately or
+# change this to point to the package index where it's published.
+# langgraph
