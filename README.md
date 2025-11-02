@@ -39,8 +39,11 @@ CI / Deployment
 
 Next steps / notes
 
-- Replace placeholder package names in `requirements.txt` w<img width="1917" height="956" alt="AI_chatbot" src="https://github.com/user-attachments/assets/acaa6a1e-682a-469d-9795-c6cf2ebf3e46" />
-ith exact package names if you use private packages (e.g., `langgraph`).
+- Replace placeholder package names in `requirements.txt` ith exact package names if you use private packages (e.g., `langgraph`).
 - Add your secrets (OpenAI key, GHCR credentials, AgentOp token) to GitHub Secrets when enabling CI or deploy workflows.
 
-![Uploading AI_chatbot.png…]()
+- 
+- <img width="1917" height="956" alt="AI_chatbot" src="https://github.com/user-attachments/assets/acaa6a1e-682a-469d-9795-c6cf2ebf3e46" />
+
+
+
